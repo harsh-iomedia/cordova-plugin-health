@@ -77,7 +77,7 @@
   </platform>
 
   <!-- android -->
-  <platform name="android">
+  <!-- <platform name="android">
     <framework src="com.google.android.gms:play-services-fitness:$FIT_API_VERSION" />
     <preference name="FIT_API_VERSION" default="20.0.0"/>
 
@@ -89,9 +89,7 @@
       <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
       <uses-permission android:name="android.permission.BODY_SENSORS" />
       <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
-      <!-- Use the following if API target is < 29 -->
       <uses-permission android:name="android.gms.permission.ACTIVITY_RECOGNITION"/>
-      <!-- Use the following if API target is > 30 -->
       <queries>
         <package android:name="com.google.android.apps.fitness" />
       </queries>
@@ -109,6 +107,6 @@
     <js-module src="www/android/health.js" name="health">
       <clobbers target="navigator.health" />
     </js-module>
-  </platform>
+  </platform> -->
 
 </plugin>
