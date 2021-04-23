@@ -76,37 +76,4 @@
     <framework src="HealthKit.framework" weak="true" />
   </platform>
 
-  <!-- android -->
-  <!-- <platform name="android">
-    <framework src="com.google.android.gms:play-services-fitness:$FIT_API_VERSION" />
-    <preference name="FIT_API_VERSION" default="20.0.0"/>
-
-    <framework src="com.google.android.gms:play-services-auth:$PLAY_AUTH_VERSION" />
-    <preference name="PLAY_AUTH_VERSION" default="19.0.0"/>
-
-
-    <config-file target="AndroidManifest.xml" parent="/*">
-      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-      <uses-permission android:name="android.permission.BODY_SENSORS" />
-      <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
-      <uses-permission android:name="android.gms.permission.ACTIVITY_RECOGNITION"/>
-      <queries>
-        <package android:name="com.google.android.apps.fitness" />
-      </queries>
-    </config-file>
-
-    <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="health">
-        <param name="android-package" value="org.apache.cordova.health.HealthPlugin" />
-      </feature>
-      <access origin="https://accounts.google.com/*" />
-    </config-file>
-
-    <source-file src="src/android/HealthPlugin.java" target-dir="src/org/apache/cordova/health/" />
-
-    <js-module src="www/android/health.js" name="health">
-      <clobbers target="navigator.health" />
-    </js-module>
-  </platform> -->
-
 </plugin>
